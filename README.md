@@ -7,7 +7,7 @@ KCB Loan Manager is a PHP project designed to help you manage all your loans and
 1. **Clone the Repository:**
    Clone this repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/your-username/kcb-loan-manager.git
+   git clone https://github.com/mesh-dell/loan-system.git
    ```
 
 2. **Install Dependencies:**
