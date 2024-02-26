@@ -115,55 +115,58 @@ else{
 
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Loans</title>
-	<link rel="stylesheet" type="text/css" href="./dashboard.css">
-	<link rel="stylesheet" type="text/css" href="./form.css">
-	<style type="text/css">
-		body{
-			background-color: #EBEBEB;
-		}
-	</style>
-	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer ></script>
-	<script type="text/javascript" src="validate_payment.js" defer></script>
-</head>
-<body>
-	<div class="nav">
-		<h4>KCB Loan Tracker</h4>
-		<a href="dashboard.php">Overview</a>
-		<a href="loans.php">Loans</a>
-		<a href="#" class="overview">New Loan</a>
-		<a href="logout.php"><img src="./assets/logout.png"></a>
-	</div>
 
-	<div class="container-loan">
-		<h1>Create Loan</h1>
-		<form method="post" id="form">
-		<div>
-			<label for="loan-name">Loan Name</label>
-			<input type="text" name="loan-name" id="loan-name">
-		</div>	
-		<div>
-			<label for="loan-amount">Loan Amount</label>
-			<input type="number" name="loan-amount" id="loan-amount">
-		</div>	
-		<div>
-			<label for="interest-rate">Interest Rate (APR)</label>
-			<input type="number" name="interest-rate" id="interest-rate">
-		</div>
-		<div>
-			<label for="term">Term (Months)</label>
-			<input type="number" name="term" id="term">
-		</div>
-		<div>
-			<label for="start-date">Date</label>
-			<input type="date" name="start-date" id="start-date">
-		</div>	
-		<button>Submit</button>
-	</form>
-	</div>
-	
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loans</title>
+    <link rel="stylesheet" type="text/css" href="./dashboard.css">
+    <link rel="stylesheet" type="text/css" href="./form.css">
+    <style type="text/css">
+    body {
+        background-color: #EBEBEB;
+    }
+    </style>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script type="text/javascript" src="validate_payment.js" defer></script>
+</head>
+
+<body>
+    <div class="nav">
+        <h4>KCB Loan Tracker</h4>
+        <a href="dashboard.php">Overview</a>
+        <a href="loans.php">Loans</a>
+        <a href="#" class="overview">New Loan</a>
+        <a href="logout.php"><img src="./assets/logout.png"></a>
+    </div>
+
+    <div class="container-loan">
+        <h1>Create Loan</h1>
+        <form method="post" id="form">
+            <div>
+                <label for="loan-name">Loan Name</label>
+                <input type="text" name="loan-name" id="loan-name">
+            </div>
+            <div>
+                <label for="loan-amount">Loan Amount</label>
+                <input type="number" name="loan-amount" id="loan-amount">
+            </div>
+            <div>
+                <label for="interest-rate">Interest Rate (APR)</label>
+                <input type="number" name="interest-rate" id="interest-rate">
+            </div>
+            <div>
+                <label for="term">Term (Months)</label>
+                <input type="number" name="term" id="term">
+            </div>
+            <div>
+                <label for="start-date">Date</label>
+                <input type="date" name="start-date" id="start-date">
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+
 </body>
+
 </html>
