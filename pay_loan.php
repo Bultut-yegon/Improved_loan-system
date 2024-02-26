@@ -80,28 +80,31 @@ else{
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pay Loan</title>
-	<link rel="stylesheet" type="text/css" href="./form.css">
-	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer ></script>
-	<script type="text/javascript" src="validate_loan.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pay Loan</title>
+    <link rel="stylesheet" type="text/css" href="./form.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script type="text/javascript" src="validate_loan.js" defer></script>
 </head>
+
 <body>
-	<div class="container-pay">
-		<form method="post" id="form">
-			<h1>Pay Loan</h1>
-			<div>
-				<label for="payment-date">Payment Date</label>
-				<input type="date" name="payment-date" id="payment-date">
-			</div>	
-			<div>
-				<label for="payment-amount">Payment Amount</label>
-				<input type="number" name="payment-amount" id="payment-amount">
-			</div>	
-			<button>Submit</button>
-		</form>
-	</div>
+    <div class="container-pay">
+        <form method="post" id="form">
+            <h1>Pay Loan</h1>
+            <div>
+                <label for="payment-date">Payment Date</label>
+                <input type="date" name="payment-date" id="payment-date">
+            </div>
+            <div>
+                <label for="payment-amount">Payment Amount</label>
+                <input type="number" name="payment-amount" id="payment-amount">
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>

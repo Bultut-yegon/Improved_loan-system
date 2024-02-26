@@ -27,49 +27,53 @@ if ($_SERVER["REQUEST_METHOD"] === "POST")
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="./form.css">
-	<style type="text/css">
-		.error{
-			width: 70%;
-			margin: auto;
-			background-color: #FF8989;
-			padding: 10px;
-		}
-		.container-login
-		{
-			height: 350px;
-		}
-		em{
-			color: #fff;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./form.css">
+    <style type="text/css">
+    .error {
+        width: 70%;
+        margin: auto;
+        background-color: #FF8989;
+        padding: 10px;
+    }
+
+    .container-login {
+        height: 350px;
+    }
+
+    em {
+        color: #fff;
+    }
+    </style>
 </head>
+
 <body>
-	<div class="container-login">
-		<h1>Login</h1>
-		<?php if ($is_invalid):?>
-			<div class="error">
-		 		<em>Invalid login</em>
-			</div>
-		<?php endif; ?>
-		<form method="post">
-			<div>
-				<label for="email">email </label>
-				<input type="email" name="email" value="<?= htmlspecialchars($_POST['email'] ?? '' )?>">
-			</div>	
+    <div class="container-login">
+        <h1>Login</h1>
+        <?php if ($is_invalid):?>
+        <div class="error">
+            <em>Invalid login</em>
+        </div>
+        <?php endif; ?>
+        <form method="post">
+            <div>
+                <label for="email">email </label>
+                <input type="email" name="email" value="<?= htmlspecialchars($_POST['email'] ?? '' )?>">
+            </div>
 
-			<div>
-				<label for="username">Password</label>
-				<input type="password" name="password">
-			</div>	
+            <div>
+                <label for="username">Password</label>
+                <input type="password" name="password">
+            </div>
 
-			<button>Log in</button>
-		</form>
-	</div>
-		<p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            <button>Log in</button>
+        </form>
+    </div>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
 </body>
+
 </html>
