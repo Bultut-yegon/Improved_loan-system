@@ -148,8 +148,8 @@ if (isset($_SESSION['user_id']))
             <table>
                 <tr>
                     <th>Name</th>
-                    <th>Date</th>
                     <th>Amount</th>
+                    <th>Date</th>
                 </tr>
                 <?php while ($row = $result->fetch_assoc()) :?>
                 <tr>
